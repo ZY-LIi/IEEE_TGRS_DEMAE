@@ -35,7 +35,8 @@ Instructions for usage
     loss_function.py ...... A script for calculating training loss.
     visualization.py ...... A script for drawing and visualization.
 
-1. Begin by running model_pretraining.py for self-supervised pre-training an initial model weight, and the script will automatically save the weight with the minimum loss in the "./save/pretrained_weights" folder. We have provided pre-trained weights on PU (University of Pavia), SA (Salinas), HU (University of Houston) and LK (WHU-Hi LongKou) datasets in this folder.
-2. Proceed to run main.py for model fine-tuning and classification on the specified dataset. Ensure that you accurately type the pre-trained weight's file path into the designated dictionary variable before initiating the process.
-3. Only need to modify the "pretrained_weights_path" variable in the designated dictionary and the corresponding hyperparameters in main.py for cross-domain experiments.
-4. Welcome to perform self-supervised pre-training on your own dataset, and we would be grateful if you could make it public!
+1. Due to Github file upload restrictions, please place the corresponding data according to the dataset path in line 7 of data.py.
+2. Begin by running model_pretraining.py for self-supervised pre-training an initial model weight, and the script will automatically save the weight with the minimum loss in the "./save/pretrained_weights" folder. We have provided pre-trained weights on PU (University of Pavia), SA (Salinas), HU (University of Houston) and LK (WHU-Hi LongKou) datasets in this folder.
+3. Proceed to run main.py for model fine-tuning and classification on the specified dataset. Ensure that you accurately type the pre-trained weight's file path into the designated dictionary variable before initiating the process.
+4. Only need to modify the "pretrained_weights_path" variable in the designated dictionary and the corresponding hyperparameters in main.py for cross-domain experiments.
+5. Welcome to perform self-supervised pre-training on your own dataset, and we would be grateful if you could make it public!
