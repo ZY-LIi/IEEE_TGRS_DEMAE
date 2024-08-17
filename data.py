@@ -231,6 +231,8 @@ def HSI_LazyProcessing(dataset_name='PU', n_pc=16, no_processing=False, whiten=T
         X_extension = np.load(pca_file_path)
         X_extension = X_extension[..., :n_pc]
     else:
+        if not os.path.exists('./save/pca_result'):
+            os.makedirs('./save/pca_result')
         X = load_dataset(dataset_name, key=1)
         [row, col, band] = X.shape
         X = pca_processing(X, n_pc=band, whiten=whiten)

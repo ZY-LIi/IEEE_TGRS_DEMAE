@@ -183,6 +183,8 @@ def loop_train_test(dataset_name, run_times, num_PC, train_num, patch_size, batc
         metric = []
 
         print('Seed: %d' % seed)
+        if not os.path.exists('./save/models'):
+            os.makedirs('./save/models')
         for run in range(run_times):
             for file in os.listdir('./save/models'):
                 os.remove(os.path.join('./save/models', file))
