@@ -435,8 +435,8 @@ if __name__ == '__main__':
     # b = default_mirror_width - patch_radius
     # X_PCAMirror = X_PCAMirror[b: -b, b: -b]
     # # model = Model_EMA(n_class=n_class, state_dicts=state_dicts, raw_dim=band, dim=dim, patch_size=patch_size)
-    # from model import masked_diffusion_test
-    # model = masked_diffusion_test(dim=dim, num_class=n_class, patch_size=patch_size)
+    # from model import DEMAE_test
+    # model = DEMAE_test(dim=dim, num_class=n_class, patch_size=patch_size)
     # model.load_state_dict(state_dicts[-1], strict=False)
     # output_classification_map(model, X_PCAMirror, Y, dataset_name=dataset_name, patch_size=patch_size)
 
