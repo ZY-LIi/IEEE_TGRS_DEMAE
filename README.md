@@ -4,7 +4,7 @@
 
 ___________
 
-This is a slim implementation of the "DEMAE: Diffusion Enhanced Masked Autoencoder for Hyperspectral Image Classification With few Labeled Samples", which will be published at _IEEE TGRS_ soon! And the official release please sees ["here"](https://github.com/ZhaohuiXue/DEMAE).
+This is a slim implementation of the ["DEMAE: Diffusion Enhanced Masked Autoencoder for Hyperspectral Image Classification With few Labeled Samples"](https://ieeexplore.ieee.org/document/10639453), which has been published at _IEEE TGRS_! And the official release please sees ["here"](https://github.com/ZhaohuiXue/DEMAE).
 
 ![alt text](./figure/demae.jpg)
 **Figure 1: The overview of Diffusion Enhanced Masked Autoencoder, including four stages: HSI Data Pre-processing, Self-Supervised Pre-training, Fine-Tuning and Classification.**
@@ -12,6 +12,24 @@ This is a slim implementation of the "DEMAE: Diffusion Enhanced Masked Autoencod
 ![alt text](./figure/ConditionalTransformer2.jpg)
 **Figure 2: Pre-training details of Diffusion Enhanced Masked Autoencoder, including Diffusion branch and MAE branch.**
 
+Citation
+---------------------
+
+**Reproductions of our model and experiments are very welcome, and citations to our paper will be greatly appreciated**
+
+Z. Li _et al._, "DEMAE: Diffusion-Enhanced Masked Autoencoder for Hyperspectral Image Classification With Few Labeled Samples," in IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-16, 2024, Art no. 5527616, doi: 10.1109/TGRS.2024.3445991.
+
+    @ARTICLE{10639453,
+        author={Li, Ziyu and Xue, Zhaohui and Jia, Mingming and Nie, Xiangyu and Wu, Hao and Zhang, Mengxue and Su, Hongjun},
+        journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+        title={DEMAE: Diffusion-Enhanced Masked Autoencoder for Hyperspectral Image Classification With Few Labeled Samples}, 
+        year={2024},
+        volume={62},
+        number={},
+        pages={1-16},
+        keywords={Feature extraction;Transformers;Task analysis;Training;Image reconstruction;Data models;Diffusion models;Diffusion;few labeled samples;hyperspectral image (HSI) classification;masked autoencoder (MAE);Transformer},
+        doi={10.1109/TGRS.2024.3445991}
+    }
 
 Requirements
 ---------------------
